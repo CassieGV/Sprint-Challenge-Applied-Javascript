@@ -12,8 +12,11 @@
 // and append it to the DOM inside the div.header-container
 
 function Header(date, temp) {
+    let headerContainer = document.querySelector(".header-container"); 
+
     let header = document.createElement("div");
     header.classList.add("header");
+    headerContainer.appendChild(header);
 
     let Date = document.createElement("span");
     Date.classList.add("date");
@@ -28,7 +31,10 @@ function Header(date, temp) {
     Temp.classList.add("temp");
     Temp.textContent = temp
     header.appendChild(Temp);
-
+    
+    console.log(header);
     return header;
 }
+
+Header("SMARCH 28, 2019", "98°")
 
