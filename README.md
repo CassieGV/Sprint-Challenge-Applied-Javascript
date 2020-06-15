@@ -29,14 +29,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead.
 
 1. What is the DOM?
+    DOM means Document Object Model
+    The DOM is a like a translator, using input javascript to work through html
 
 2. What is an event?
+    anything that will cause anything to happen within code.  For example, a programmer can create a 'click' event meaning that something will happen according to the code when a user clicks
 
 3. What is an event listener?
+    and event listener literally "listens" or watchs for the action that will trigger a specific event to occur
 
 4. Why would we convert a NodeList into an Array?
+    we have code to work with arrays
 
 5. What is a component?
+    components are javascript building blocks, made from html and css.  These building blocks can then we built into the DOM
 
 ### Git Set up
 
@@ -55,7 +61,7 @@ Your finished project must include all of the following requirements:
 
 * [X] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [X] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 
