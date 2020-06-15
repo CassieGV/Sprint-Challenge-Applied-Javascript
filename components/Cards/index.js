@@ -18,3 +18,33 @@
 // </div>
 //
 // Use your function to create a card for each of the articles and add the card to the DOM.
+
+axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
+    .then(function(response) {
+        console.log(response.data.articles)
+    })
+
+function CreateCard(headline, author, name) {
+    let card = document.createElement("div");
+    card.classList.add("card")
+    
+
+    let Headline = document.createElement("div");
+    Headline.classList.add("headline")
+    Headline.textContent = headline
+
+
+    let Author = document.createElement("div")
+    Author.classList.add("author")
+    
+    let pic = document.createElement("div");
+    pic.classList.add("img-container")
+    Author.appendChild(pic)
+    let image = document.createElement("img");
+    image.src = author
+    pic.appendChild(image)
+
+    let Name = document.createElement("span");
+    Name.textContent = "By " + name
+    pic.appendChild(Name);
+}
