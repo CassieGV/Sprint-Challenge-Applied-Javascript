@@ -17,3 +17,23 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+function carousel(){
+  let Carousel = document.createElement("div");
+  Carousel.classList.add("carousel")
+
+  let Lbutton = document.createElement("div")
+  Lbutton.classList.add("left-button");
+  Carousel.appendChild(Lbutton);
+
+  let imgOne = document.createElement("img")
+  imgOne.src = './assets/carousel/mountains.jpeg'
+
+  let imgTwo = document.createElement("img")
+  imgTwo.src = 
+
+  let imgThree = document.createElement("img")
+  imgThree.src = ./assets/carousel/TimeRanges.jpeg
+  
+
+}
